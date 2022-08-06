@@ -38,7 +38,7 @@ export default function Register(){
             id='email' 
             onChange={handleChange}/>
 
-            <label htmlFor='password' ></label>
+            <label htmlFor='password' >Password</label>
             <input 
             type='password'
             name='password' 
