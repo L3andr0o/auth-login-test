@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {useAuth} from '../Context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import Alert from '../Components/Alert';
 
 export default function Register(){
 
@@ -28,7 +29,7 @@ export default function Register(){
 
     return(
         <div>
-            {error && <p>{error}</p>}
+            {error && <Alert message={error} />}
             <form onSubmit={handleSubmit}>
             <label htmlFor='email'>Email</label>
             <input 
